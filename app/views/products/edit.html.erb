@@ -1,0 +1,8 @@
+<h1>Edit Product</h1>
+
+<%= form_with(model: @product, url: product_path, method: :put) do |form| %>
+  <%= form.label :name, 'Product Name' %>
+  <%= form.text_field :name %>
+
+  <%= form.submit 'Save' %>
+<% end %>

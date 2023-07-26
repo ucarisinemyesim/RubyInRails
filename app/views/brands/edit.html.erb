@@ -1,0 +1,13 @@
+<h1>Edit Brand</h1>
+<%= form_for @brand, url: brand_path, method: :put do |f| %>
+  <div class="field">
+    <%= f.label :name, "Brand Name" %>
+    <br> <br>
+    <%= f.text_field :name %>
+    <br> <br>
+    <%= f.submit "Save" %>
+
+  </div>
+<% end %>
+
+<%= link_to "Go back", brands_path %>

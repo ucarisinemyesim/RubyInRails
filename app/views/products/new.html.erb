@@ -1,0 +1,44 @@
+<style>
+  .form-container {
+    display: inline-block;
+    margin-right: 10px; 
+  }
+
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+  }
+
+  .form-wrapper {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .link-container {
+    margin-top: 10px;
+  }
+</style>
+
+<h1>Add New Product</h1>
+
+<div class="form-wrapper">
+  <%= form_with model: @product, url: products_path do |form| %>
+    <div class="form-container">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="form-container">
+      <%= form.label :brand_id, "Brand" %>
+      <%= form.collection_select :brand_id, Brands.all, :id, :name %>
+    </div>
+    <div class="actions">
+    <br>
+      <%= form.submit "Save" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="link-container">
+  <%= link_to 'Go Back', products_path %>
+</div>

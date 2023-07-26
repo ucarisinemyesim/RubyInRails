@@ -1,0 +1,9 @@
+
+<h1>Add New Brand</h1>
+<%= form_with(model: @brand, url: brands_path, method: :post) do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.submit %>
+<% end %>
+
+
