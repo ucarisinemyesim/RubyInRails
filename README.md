@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bu proje bir Ruby in Rails projesidir.
+İçerisinde markaların ve ürünlerin listelendiği sayfalar barındırır.
+Ürünler markalara ait olarak listelenir. 
+Veri tabanı bulunmadığı için ilk markanın ve ürünün manuel eklenmesi sayesinde sayfalar görüntülenir, CRUD işlemleri gerçekleştirilir.
